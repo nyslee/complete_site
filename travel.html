@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href ="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <link href="dist/css/lightbox.css" rel="stylesheet">
+
+    <title>Travel</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Agbalumo&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/1951e1bc60.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <a href = "#main" id = "skip" class = "link" tabindex="0">Skip to Main Content</a>
+    <nav id="myNav">
+        <ul> 
+            <li class = "link"><a href="index.html"><i class="fa-solid fa-dog"></i>Pets</a></li>
+            <li class = "link"><a href="travel.html" class = "current"><i class="fa-solid fa-location-dot"></i>Travel</a></li> 
+            <li class = "link"><a href="recipes.html"><i class="fa-solid fa-cookie-bite"></i>Recipes</a></li>  
+         </ul>
+    </nav>
+
+    <main id = "main" class="travel">
+        <div> 
+            <header><h1>Travel Locations</h1></header>
+            <!-- <div class = "travelinfo">
+                <h2 class = "travelname">Yellowstone</h2>
+                <img src="images/yellowstone_cauldron.gif" class = "gif" width="400" alt="Bubbling cauldron.">
+                <img src="images/yellowstone_cauldron.jpg" class = "static" width = "400" alt="Bubbling cauldron">
+
+                <h3 class = "geotag">Geographical Location: North America</h3>
+                <p class = "travelinfo1">Yellowstone is the first national park in the United States. It covers over 2.2 million acres, and provides an opportunity to see wildlife and explore geothermal areas.  In fact, Yellowstone contains about half the world's active geysers.</p>
+                <p class = "travelinfo2">These unique opportunities also bring out a lot of bad decisions among the tourists.  Every year visitors injure themselves or the wildlife by getting close to the animals.  You  can see examples of people making bad decisions by visiting <a href ="https://www.facebook.com/groups/yellowstonenationalparkinvasionoftheidiots/" class = "yslink">Yellowstone National Park: Invasion of the Idiots</a>, <a href="https://www.instagram.com/touronsofyellowstone/?hl=en" class = "yslink">Tourons of Yellowstone</a>, or  <a href="https://cowboystatedaily.com/" class = "yslink">Cowboy State Daily</a>.</p>
+            </div> -->
+            <div class = "travelinfo">
+                <h2 class = "travelname">Yellowstone</h2>
+                <img src="images/yellowstone_cauldron.gif" class = "gif" width="400" alt="Bubbling cauldron.">
+                <img src="images/yellowstone_cauldron.jpg" class = "static" width = "400" alt="Bubbling cauldron">
+
+                <h3 class = "geotag">Geographical Location: North America</h3>
+                <p class = "traveldetail">Yellowstone is the first national park in the United States. It covers over 2.2 million acres, and provides an opportunity to see wildlife and explore geothermal areas.  In fact, Yellowstone contains about half the world's active geysers. <br><br> These unique opportunities also bring out a lot of bad decisions among the tourists.  Every year visitors injure themselves or the wildlife by getting close to the animals.  You  can see examples of people making bad decisions by visiting <a href ="https://www.facebook.com/groups/yellowstonenationalparkinvasionoftheidiots/" class = "yslink">Yellowstone National Park: Invasion of the Idiots</a>, <a href="https://www.instagram.com/touronsofyellowstone/?hl=en" class = "yslink">Tourons of Yellowstone</a>, or  <a href="https://cowboystatedaily.com/" class = "yslink">Cowboy State Daily</a>.</p>
+            </div>
+                <h3>Photo Gallery</h3>
+             <section>
+                    <figure>
+                        <a href="images/yellowstone_travertine.JPG" target="_blank" data-lightbox="yellowstonegallery" data-title="Mammoth Sprintgs" data-alt="colorful mound">
+                            <img width = "200" src="images/yellowstone_travertine.JPG" alt="A large mound of multi-colored travertine">
+                        </a>
+                        <figcaption>Mammoth Hot Springs has a number of actively forming Travertine terraces.</figcaption>
+                    </figure>
+                    <figure>
+                        <a href="images/yellowstone_sunset.jpg" target="_blank" data-lightbox="yellowstonegallery" data-title="Lamar Valley" data-alt="dangerous valley">
+                            <img width = "200" src="images/yellowstone_sunset.jpg" alt="Sunset over mountains with some charred trees in the foreground">
+                        </a>
+                        <figcaption>The drive to Lamar Valley requires some dangerous roads.  But the result is amazing sunset views.</figcaption>
+                    </figure>
+                    <figure>
+                            <a href="images/yellowstone_prism.MOV" target="_blank" data-lightbox="yellowstonegallery" data-title="Yellowstone Spring" data-alt="watering hole">
+                                <video width="200"  controls>   
+                                    <source class = "travelgallery" src="images/yellowstone_prism.MOV">
+                                    Your browser does not support the video tag.
+                                </video>
+                            </a>
+                        <figcaption>The multicolored layers get their hues from different species of bacteria living in the cooler water around the spring.</figcaption>
+                    </figure>
+                    <figure>
+                            <a href="images/yellowstone_buffalo.MOV" target="_blank" data-lightbox="yellowstonegallery" data-title="Yellowstone Buffalo" data-alt="walking buffalo">
+                                <video width="200"  controls>
+                                    <source class = "thumbnail" src="images/yellowstone_buffalo.MOV">
+                                    Your browser does not support the video tag.
+                                </video>
+                            </a>
+                        <figcaption>The buffalo were so common along the roads in Yellowstone that our mantra became "If it ain't lickin the car, we aren't stopping."</figcaption>
+                    </figure>
+                    <figure>
+                        <a href="images/yellowstone_sulphur_springs.JPG" target="_blank" data-lightbox="yellowstonegallery" data-title="Yellowstone Sulfar Springs" data-alt="sulfar springs">
+                            <img class = "thumbnail" src="images/yellowstone_sulphur_springs.JPG" width = "200" alt="A large spring with clouds of sulfur smoke rising from it.">
+                        </a>
+                    
+                        <figcaption>If you can handle the odor, the Yellowstone Sulphur Springs is a great place to hike.</figcaption>
+                    </figure>
+            </section>
+            <!-- Colleen van Lent -->
+        </div>
+        <div>
+            <div class = "travelinfo">
+                <h2 class = "travelname">Dubai, United Arab Emirates</h2>
+                <img src="images/dubai_night.gif" class = "gif" width = "400" alt="A tall building that dwarfs its surroundings"> 
+                <img src="images/dubai_dusk.jpg" class = "static" width = "400" alt="A tall building that dwarfs its surroundings"> 
+
+                <h3 class = "geotag">Geographical Location: Asia</h3>
+                <p class = "traveldetail">Dubai is a growing attraction for many travelers. This city is located in the United Arab Emirates on the southeastern coast of the Persian Gulf. Dubai is renowned for its iconic architecture, luxurious lifestyle, and rapid development. Dubai is a global hub for tourism, innovation, and business. <br><br> Dubai is a futuristic oasis in the middle of the desert. This city offers a unique blend of tradition and modernity. Towering skyscrapers offer a breathtaking skyline view. Dubai contains iconic buildings, malls, and islands that fuel its tourism. </p>
+            </div>
+                <h3>Photo Gallery </h3>
+             <section>
+                    <figure>
+                        <a href="images/dubai_ski.jpg" target="_blank" data-lightbox="dubaigallery" data-title="Dubai Ski Resort" data-alt="ski resort in Dubai">
+                            <img src="images/dubai_ski.jpg" width = "200" alt="An indoor ski resort with skiers skiing through the snow">
+                        </a>
+                        <figcaption>A snowy escape, Ski Dubai offers an indoor winter retreat from the harsh desert heat.</figcaption>
+                    </figure>
+                    <figure>
+                        <a href="images/dubai_burjalarab.webp" target="_blank" data-lightbox="dubaigallery" data-title="Burj Al Arab in Dubai" data-alt="ship shaped building off Dubai's coast">
+                            <img src="images/dubai_burjalarab.webp" width = "200" alt=" A building shaped like a sail of a ship just off the coastline">
+                        </a>
+                        <figcaption>Located just off the coastline, the Burj Al Arab boasts a unique design and world-class service.</figcaption>
+                    </figure>
+                    <figure>
+                        <a href="images/dubai_mall.jpg" target="_blank" data-lightbox="dubaigallery" data-title="Dubai Mall" data-alt="mall building in Dubai">
+                            <img src="images/dubai_mall.jpg" width = "200" alt="A building with intricate detail adjacent to the Burj Khalifa.">
+                        </a>
+                        <figcaption>Nestled in the heart of downtown Dubai, the Dubai Mall offers a wide range of experiences from shopping, dining, and entertainment.</figcaption>
+                    </figure>
+                    <figure>
+                        <a href="images/dubai_palmislands.webp" target="_blank" data-lightbox="dubaigallery" data-title="Palm Islands in Dubai" data-alt="cluster of islands in palm tree shape">
+                            <img src="images/dubai_palmislands.webp" width = "200" alt="A cluster of islands in the shape of a palm tree">
+                        </a>
+                        <figcaption>An engineering marvel, the palm islands are shaped like a palm tree and provides an additional area for tourists.</figcaption>
+                    </figure>
+                    <figure>
+                        <a href="images/dubai_burjkhalifa.webp" target="_blank" data-lightbox="dubaigallery" data-title="Burj Khalifa in Dubai" data-alt="tallest building in Dubai">
+                            <img src="images/dubai_burjkhalifa.webp" width = "200" alt="A tall building that dwarfs its surroundings">
+                        </a>
+                        <figcaption>Reaching into the clouds, witness the tallest building in the world the Burj Khalifa.</figcaption>
+                    </figure>
+            </section>
+
+            <!-- Nathan Lee -->
+        </div>
+        <div>
+            <div class = "travelinfo">
+                <h2 class = "travelname">Seattle, Washington</h2>
+                <img src="images/seattle_sail.gif" class = "gif" width="400" alt ="Seattle with sailboat">
+                <img src="images/SeattlePrimaryImage.jpg" class = "static" width="400" alt ="Seattle Skyline">
+
+                <h3 class = "geotag">Geographical Location: North America</h3>
+                <p class = "traveldetail">Seattle, Washington is located in the United States on the North American continent. Seattle is broken up into neighborhoods, some being Capitol Hill, Pioneer Square and Queen Anne. Nearby suburbs include Mercer Island, Bellevue and Kirkland, located approximately 15-20 minutes from Seattle. <br><br> The University of Washington is located in Seattle. There is an undergraduate and a graduate program within the University and it is known for its pristine academics. U of W is located on the Northern part of Seattle.</p>
+            </div>
+                <h3>Photo Gallery</h3>
+            <section>
+                    <figure>
+                        <a href="images/SeattlePrimaryImage.jpg" target="_blank" data-lightbox="seattlegallery" data-title="Ferris Wheel in Seattle" data-alt="ferris wheel spinning in Seattle">
+                            <img src="images/SeattlePrimaryImage.jpg" width = "200" alt = "The Ferris wheel in the summer in Seattle zoomed in next to the Space needle taken from a ferry boat.">
+                        </a>
+                        <figcaption>
+                        Seattle's most popular monuments taken by ferry boat.</figcaption>
+                    </figure>
+                    <figure>
+                        <a href="images/SeattleImage1.jpg" target="_blank" data-lightbox="seattlegallery" data-title="Mount Rainer in Seattle" data-alt="mountain in sunset">
+                            <img src="images/SeattleImage1.jpg" width="200" alt = "Mount Rainier taken in the evening with a pink sunset.">
+                        </a>
+                        <figcaption>The beautiful mount rainier in Seattle during Sunset</figcaption>
+                    </figure>
+                    <figure>
+                        <a href="images/SeattleImage2.jpg" target="_blank" data-lightbox="seattlegallery" data-title="Pike Place Market Sign" data-alt="pike place market in Seattle">
+                            <img src="images/SeattleImage2.jpg" width="200" alt = "The big, red Pike Place Market sign taken from the streets.">
+                        </a>
+                        <figcaption>The famous Pike Place market sign</figcaption>
+                    </figure>
+                    <figure>
+                        <a href="images/SeattleImage3.jpg" target="_blank" data-lightbox="seattlegallery" data-title="Cherry Tree Blossoming in University Washington" data-alt="cherry trees in University of Washington">
+                            <img src="images/SeattleImage3.jpg" width="200" alt = "Looking out into the grass at the University of Washington campus diag during the peak season of the cherry blossoms.">
+                        </a>
+                        <figcaption>University of Washington's cherry blossoms blooming in their quadrangle</figcaption>
+                    </figure>
+                    <figure>
+                        <a href="images/SeattleImage4.jpg" target="_blank" data-lightbox="seattlegallery" data-title="Seattle Skyline" data-alt="skyline of Seattle">
+                            <img src="images/SeattleImage4.jpg" width="200" alt = "A view of the Seattle skylines lit up at night">
+                        </a>
+                        <figcaption>
+                            The Seattle skylines lit up at night, featuring the newly built, zero carbon emission hockey arena.</figcaption>
+                    </figure>
+            </section>
+             <!-- Vaiva Raisys -->
+            </div>
+        <div>
+            <div class = "travelinfo">
+                <h2 class = "travelname">Ari Atoll, Maldives</h2>
+                <img src="images/maldives.gif" class = "gif" width="400" alt="hammock swinging in beach">
+                <img src="images/maldives_aerial.jpeg" class = "static" width="400" alt="aerial view of houses on water">
+
+                <h3 class = "geotag">Geographical Location: Asia</h3>
+                <p class = "traveldetail">Maldives is an archipelagic state and country in South Asia, situated in the Indian Ocean. It lies southwest of Sri Lanka and India, about 750 kilometres (470 miles; 400 nautical miles) from the Asian continent's mainland. The Maldives' chain of 26 atolls stretches across the equator from Ihavandhippolhu Atoll in the north to Addu Atoll in the south. <br><br> Maldives offers such an incredible combination of dazzling beaches, cerulean waters and fantastic diving that its opening up to travelers without limitless financial resources is definitely a cause for celebration.</p>
+            </div>
+                <h3>Photo Gallery </h3>
+            <section>
+                    <figure>
+                        <a href="images/maldives_hotel.jpeg" target="_blank" data-lightbox="maldivesgallery" data-title="Hotel in Maldives" data-alt="Maldives hotel">
+                            <img src="images/maldives_hotel.jpeg" width = "200" alt="A maldives hotel with multiple suites lined up on the right and a central boardwalk">
+                        </a>
+                        <figcaption>One of several maldivian hotels, all built right over the ocean.</figcaption>
+                    </figure>
+                    <figure>
+                        <a href="images/maldives_diving.jpeg" target="_blank" data-lightbox="maldivesgallery" data-title="Reef in Maldives" data-alt="Maldives reef">
+                            <img src="images/maldives_diving.jpeg" width = "200" alt="A scuba diver diving in the Maldives along a vibrant reef">
+                        </a>
+                        <figcaption>Exploring the gorgeous reefs of Maldives</figcaption>
+                    </figure>
+                    <figure>
+                        <a href="images/maldives_restaurant.jpeg" target="_blank" data-lightbox="maldivesgallery" data-title="Luxury Restaurant in Maldives" data-alt="Maldives luxury">
+                            <img src="images/maldives_restaurant.jpeg" width = "200" alt="Interior of a luxury dining restaurant in Maldives overlooking the ocean">
+                        </a>
+                        <figcaption>Maldives offers wonderful dining experience</figcaption>
+                    </figure>
+                    <figure>
+                        <a href="images/maldives_hammock.webp" target="_blank" data-lightbox="maldivesgallery" data-title="Hammock by Beach in Maldives" data-alt="Maldives beach with hammock">
+                            <img src="images/maldives_hammock.webp" width = "200" alt="A hammock on the beach besides the clear blue waters of Maldives">
+                        </a>
+                        <figcaption>Lazy days on the beach</figcaption>
+                    </figure>
+                    <figure>
+                        <a href="images/maldives_glowing.jpeg" target="_blank" data-lightbox="maldivesgallery" data-title="Bioluminescent Beach in Maldives" data-alt="Maldives bioluminescent beach"> 
+                            <img src="images/maldives_glowing.jpeg" width = "200" alt="The bioluminescent glowing beach of Maldives where the waters glow blue">
+                        </a>
+                        <figcaption>Biological splendors on the island shores</figcaption>
+                    </figure>
+            </section>
+            <!-- Aditya Kaushal -->
+        </div>
+    </main>
+    <script src="dist/js/lightbox-plus-jquery.js"></script>
+    <script src="js/jsChallenges.js"></script>
+</body>
+</html>

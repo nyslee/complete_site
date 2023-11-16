@@ -1,0 +1,852 @@
+body {
+  background-color:#659dbd;
+  font-size: 130%;
+}
+
+.link, .myBtn{
+    background: #3498db;
+    background-image: -webkit-linear-gradient(top, #3498db, #2980b9);
+    background-image: -moz-linear-gradient(top, #3498db, #2980b9);
+    background-image: -ms-linear-gradient(top, #3498db, #2980b9);
+    background-image: -o-linear-gradient(top, #3498db, #2980b9);
+    background-image: linear-gradient(to bottom, #3498db, #2980b9);
+    -webkit-border-radius: 13;
+    -moz-border-radius: 13;
+    border-radius: 13px;
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 20px;
+    padding: 10px 20px 10px 20px;
+    border: solid #1f628d 5px;
+    text-decoration: none;
+    width: 80%;
+    display: block;
+    margin: 5px 0px;
+    margin-left: 50px; 
+    text-align: center;
+  }
+  
+  .link:hover {
+    background: #3cb0fd;
+    background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+    text-decoration: none;
+  }
+
+  #skip {
+    left: -1000px;
+    position: fixed;
+  }
+
+  #skip:focus{
+    left: 0px;
+    top:-5px;
+  }
+
+  *:focus {
+    border: 2px solid lightsalmon;
+  }
+
+/* #skip{
+    position: absolute;
+    left: -500px;
+}
+
+#skip:focus{
+    left: 400px;
+} */
+
+nav {
+  border: 2px solid black;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  /* padding: 50px; */
+  /* margin: 50px; */
+  /* margin-top: 50px; */
+}
+
+nav a {
+  /* background-color: yellow;
+  padding: 1px;
+  margin: 20px; */
+  outline:none;
+  border: 0px;
+  display: inline-block;
+  padding-right: 60px;
+  padding-left: 60px;
+}
+
+.current {
+    text-transform: uppercase;
+    color: coral;
+}
+
+p {
+  color:#000000;
+  font-size: 20px;
+}
+
+h1 {
+    font-size: 24px;
+    font-family: sans-serif;
+    text-align: center;
+    font-weight: bold;
+    padding-top: 25px;
+}
+
+h2 {
+    font-size: 20px;
+    font-family: "Agbalumo", sans-serif;
+    color: #000000;
+    font-weight: bold;
+    padding: 25px 0 0 25px;
+    margin-bottom: 20px;
+}
+
+h2 + img {
+  margin: auto;
+  display: block;
+  padding: 10px;
+  background: grey;
+}
+
+h3 {
+  font-size: 20px;
+  font-family: sans-serif;
+  color: #000000;
+  font-weight: bold;
+  padding: 25px 0 0 25px;
+  margin-bottom: 20px;
+}
+
+h4 {
+  font-size: 20px;
+  font-family: sans-serif;
+  color: #000000;
+  font-weight: bold;
+  padding: 25px 0 0 25px;
+}
+
+p {
+    line-height: 2.5;
+    padding: 30px;
+}
+
+li {
+  margin-left: 50px;
+}
+
+ul.likes {
+  list-style-type: disc;
+}
+
+ul.ingredients {
+  list-style-type: disc;
+}
+
+ol.steps {
+  list-style-type: decimal;
+}
+
+img, video {
+    border: 5px solid black; 
+    /* padding: 10px; */
+    /* margin: 20px; */
+    border-radius: 30px;
+}
+
+a {
+    text-decoration: underline;
+    /* border: solid blue; */
+}
+
+.yslink {
+  border: none;
+  text-decoration: underline;
+  color: blue;
+}
+
+#skip {
+    text-transform: uppercase;
+}
+
+.pets, .travel, .recipes {
+  background: rgba(255,255,255, 0.2);
+    width: 90%;
+    margin: auto;
+    display: grid;
+    gap: 10px;
+    justify-content: center;
+    grid-template-columns: 90%;
+}
+
+/* .thumbnail {
+    border: 20px solid blue;
+    padding: 20px;
+    margin: auto;
+    width: 250px;
+    display: block;
+    border-radius: 25px;
+} */
+
+.pets img{
+  width: 75%;
+  transition: width 2s, transform 4s;
+  transition-delay: 3s;
+}
+
+.pets img:hover {
+  width: 100%;
+  transform: rotate(360deg);
+}
+
+.petgallery {
+    display: grid;
+    grid-template-columns: 1fr;
+    /* grid-template-columns: 30% 30% 30%; */
+}
+
+/* .petgallery img:last-child{
+  grid-column: 1/-1;
+}
+
+.petgallery video:last-child{
+  grid-column: 1/-1;
+}  */
+
+.petgallery img, .petgallery video {
+  box-sizing: border-box;
+  width: 100%;
+  margin: 0;
+}
+
+
+.travel img {
+  width: 75%;
+  transition: width 2s, transform 4s;
+  transition-delay: 3s;
+  display: block;
+  margin: auto;
+
+}
+img.static{
+  display: none;
+}
+
+.travel img:hover {
+  width: 100%;
+  transform: rotate(360deg);
+}
+
+section {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+figcaption {
+  text-align: center; 
+  padding-left: 25px; 
+}
+
+section img, section video {
+  width: 100%;
+}
+
+.recipes img {
+  width: 75%;
+  transition: width 2s, transform 4s;
+  transition-delay: 3s;
+}
+
+.recipes img:hover {
+  width: 100%;
+  transform: rotate(360deg);
+}
+
+/* .travel section figure:last-child{
+  grid-column: 1/-1;
+  width: 60%;
+  margin-left: 20%;
+
+} */
+
+
+@media only screen and (min-width: 768px) {
+    .link {
+      background: #3498db;
+      background-image: -webkit-linear-gradient(top, #3498db, #2980b9);
+      background-image: -moz-linear-gradient(top, #3498db, #2980b9);
+      background-image: -ms-linear-gradient(top, #3498db, #2980b9);
+      background-image: -o-linear-gradient(top, #3498db, #2980b9);
+      background-image: linear-gradient(to bottom, #3498db, #2980b9);
+      -webkit-border-radius: 13;
+      -moz-border-radius: 13;
+      border-radius: 13px;
+      font-family: Arial;
+      color: #ffffff;
+      font-size: 20px;
+      padding: 10px 20px 10px 20px;
+      border: solid #1f628d 5px;
+      text-decoration: none;
+      width: 80%;
+      /* display: inline-block;  */
+      margin: 0px 2%;
+      text-align: center;
+    }
+    
+    .link:hover {
+      background: #3cb0fd;
+      background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+      background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+      background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+      background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+      background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+      text-decoration: none;
+    }
+
+    #skip:focus{
+      left: 120px;
+      top:-5px;
+    }
+
+    nav {
+      border: 2px solid black;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      /* padding: 50px; */
+      /* margin: 50px; */
+      /* margin-top: 50px; */
+      background: cadetblue;
+  }
+
+  nav a {
+      /* background-color: yellow;
+      padding: 1px;
+      margin: 20px; */
+      outline:none;
+      border: 0px;
+  }
+
+  .petinfo {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .petinfo img {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    margin: 0;
+    align-self: center;
+  }
+  .petinfo p {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    line-height: 1.5;
+
+  }
+
+  /* .petinfobot p {
+    grid-column-start: 1/-1;
+    line-height: 1.5;
+
+    grid-column-start: 2;
+    grid-column-end: 4;
+    line-height: 1.5;
+  } */
+
+    .petgallery {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      /* grid-template-columns: 30% 30% 30%; */
+  }
+
+  /* .petgallery img:last-child{
+    grid-column: 1/-1;
+  }
+
+  .petgallery video:last-child{
+    grid-column: 1/-1;
+  }  */
+
+  .petgallery img, .petgallery video {
+    box-sizing: border-box;
+    width: 100%;
+    margin: 0;
+  }
+
+  .vertinfo {
+    align-self: center;
+  }
+
+  p {
+    line-height: 2.5;
+    padding: 10px;
+  }
+
+
+  ul {
+    display: flex;
+  }
+
+  .travelinfo {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .travelname {
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+
+  .travelinfo img {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    margin: 0;
+    align-self: center;
+  }
+
+  section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  
+  figcaption {
+    text-align: center; 
+    padding-left: 25px; 
+  }
+  
+  section img, section video {
+    width: 100%;
+  }
+
+  h3.geotag {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row: 1/2;
+    line-height: 1.5;
+  }
+
+  .traveldetail {
+    grid-column: 2/4;
+    line-height: 1.5;
+    align-self: center;
+  }
+
+  /* .traveldetail2 {
+    grid-column: 1/4;
+    line-height: 1.5;
+  } */
+
+  .recipeinfo {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .recipename {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+
+  .recipeorigin {
+    grid-row-start: 2;
+    margin-left: 25px;
+  }
+  .recipesource {
+    grid-row-start: 2;
+  }
+  .recipecategory {
+    grid-row-start: 2;
+  }
+
+  .recipeinfo img {
+    grid-row-start: 3;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    margin: 0;
+    align-self: center;
+  }
+
+  #thumbnailspacing {
+    margin-top: 20px;
+  }
+
+  .recipegrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .recipedescription {
+    grid-row-start: 3;
+    grid-column: 2/4;
+    line-height: 1.5;
+    align-self: center;
+  }
+
+  .recipedetail {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .recipeingreds {
+    grid-column-start: 1;
+  }
+
+  .recipesteps {
+    grid-column-start: 2;
+  }
+
+  ul.ingredients {
+    display: inline;
+  }
+
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+  }
+
+  .travel section figure:last-child{
+    grid-column: 1/-1;
+    width: 60%;
+    margin-left: 20%;
+  
+  }
+
+  .recipegrid a:last-child{
+    grid-column: 1/-1;
+    width: 60%;
+    margin-left: 20%;
+  
+  }
+  
+}
+@media only screen and (min-width: 992px) {
+    #skip {
+      left: -2000px;
+      position: fixed;
+    }
+
+    .link {
+      background: #3498db;
+      background-image: -webkit-linear-gradient(top, #3498db, #2980b9);
+      background-image: -moz-linear-gradient(top, #3498db, #2980b9);
+      background-image: -ms-linear-gradient(top, #3498db, #2980b9);
+      background-image: -o-linear-gradient(top, #3498db, #2980b9);
+      background-image: linear-gradient(to bottom, #3498db, #2980b9);
+      -webkit-border-radius: 13;
+      -moz-border-radius: 13;
+      border-radius: 13px;
+      font-family: Arial;
+      color: #ffffff;
+      font-size: 20px;
+      padding: 10px 20px 10px 20px;
+      border: solid #1f628d 5px;
+      text-decoration: none;
+      width: 80%;
+      /* display: inline-block;  */
+      margin: 0px 2%;
+      text-align: center;
+    }
+    
+    .link:hover {
+      background: #3cb0fd;
+      background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+      background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+      background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+      background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+      background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+      text-decoration: none;
+    }
+
+    #skip:focus{
+      left: 120px;
+      top:-5px;
+    }
+
+    nav {
+      border: 2px solid black;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      /* padding: 50px; */
+      /* margin: 50px; */
+      /* margin-top: 50px; */
+      /* background: cadetblue; */
+      background-image: url('../images/dubai_burjalarab.webp');
+  }
+
+  nav a {
+      /* background-color: yellow;
+      padding: 1px;
+      margin: 20px; */
+      outline:none;
+      border: 0px;
+  }
+
+  /* .petinfo {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .petinfo img {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    margin: 0;
+    align-self: center;
+  }
+  .petinfo p {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    line-height: 1.5;
+  } */
+
+  /* .petinfobot p {
+    grid-column-start: 1/-1;
+    line-height: 1.5;
+
+    grid-column-start: 2;
+    grid-column-end: 4;
+    line-height: 1.5;
+  } */
+
+    .petgallery {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      /* grid-template-columns: 30% 30% 30%; */
+  }
+
+  .petgallery img, .petgallery video {
+    box-sizing: border-box;
+    width: 100%;
+    margin: 0;
+  }
+
+  /* .petgallery img:last-child{
+    grid-column: 1/-1;
+  } */
+
+  /* .petgallery video:last-child{
+    grid-column: 1/-1;
+  }  */
+
+  .petgallery figure:last-child{
+    grid-column: 1/-1;
+  } 
+
+  .spacing {
+    margin-bottom: -500px;
+  }
+
+  .vertinfo {
+    align-self: center;
+  }
+
+  p {
+    line-height: 2.5;
+    padding: 10px;
+  }
+
+
+  ul {
+    display: flex;
+  }
+
+  .travelinfo {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .travelname {
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+
+  .travelinfo img {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    margin: 0;
+    align-self: center;
+  }
+
+  .travel section figure:nth-last-child(2){
+    grid-column-start: 1;
+    grid-column-end: 2;
+    width: 60%;
+    margin-left: 20%;
+  
+  }
+
+  .travel section figure:last-child{
+    grid-column-start: 3;
+    grid-column-end: 4;
+    width: 60%;
+    margin-left: 20%;
+  
+  }
+
+  section {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  
+  figcaption {
+    text-align: center; 
+    padding-left: 25px; 
+  }
+  
+  section img, section video {
+    width: 100%;
+  }
+
+  h3.geotag {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row: 1/2;
+    line-height: 1.5;
+  }
+
+  .traveldetail {
+    grid-column: 2/4;
+    line-height: 1.5;
+    align-self: center;
+  }
+
+  /* .traveldetail2 {
+    grid-column: 1/4;
+    line-height: 1.5;
+  } */
+
+  .recipeinfo {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .recipename {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+
+  .recipeorigin {
+    grid-row-start: 2;
+    margin-left: 25px;
+  }
+  .recipesource {
+    grid-row-start: 2;
+  }
+  .recipecategory {
+    grid-row-start: 2;
+  }
+
+  .recipeinfo img {
+    grid-row-start: 3;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    margin: 0;
+    align-self: center;
+  }
+
+  #thumbnailspacing {
+    margin-top: 20px;
+  }
+
+  .recipegrid {
+    display: grid;
+    /* grid-template-columns: 1fr 1fr 1fr; */
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .recipegrid a:last-child{
+    grid-column: -1;
+    width: 60%;
+    margin-left: 20%;
+  
+  }
+
+  .recipedescription {
+    grid-row-start: 3;
+    grid-column: 2/4;
+    line-height: 1.5;
+    align-self: center;
+  }
+
+  .recipedetail {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .recipeingreds {
+    grid-column-start: 1;
+  }
+
+  .recipesteps {
+    grid-column-start: 2;
+  }
+
+  ul.ingredients {
+    display: inline;
+  }
+
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+  }
+
+  .more {
+    display: none;
+  }
+
+}
+
+@media screen and (prefers-reduced-motion: reduce){
+    img.gif{
+      display: none;
+    }
+  
+    img.static{
+      display: block;
+    }
+
+    .pets img {
+      width: 100%;
+    }
+
+    .pets img:hover{
+      transition: none;
+      transition-duration: 0;
+      transform: none;
+    }
+
+    .travel img {
+      width: 100%;
+    }
+    
+    .travel img:hover {
+      transition: none;
+      transition-duration: 0;
+      transform: none;
+    }
+
+    .recipes img {
+      width: 100%;
+    }
+
+    .recipes img:hover {
+      transition: none;
+      transition-duration: 0;
+      transform: none;
+    }
+}
+
+@media screen and (prefers-color-scheme: dark) {
+  body {
+    background-color: grey;
+    font-size: 130%;
+  }
+
+  nav {
+    background: burlywood;
+}
+}
