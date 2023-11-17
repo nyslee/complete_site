@@ -153,8 +153,8 @@ ol.steps {
 
 img, video {
     border: 5px solid black; 
-    padding: 10px;
-    margin: 20px;
+    /* padding: 10px;
+    margin: 20px; */
     border-radius: 30px;
 }
 
@@ -468,7 +468,7 @@ section img, section video {
     align-self: center;
   }
 
-  #thumbnailspacing {
+  .thumbnailspacing {
     margin-top: 20px;
   }
 
@@ -762,7 +762,7 @@ section img, section video {
     align-self: center;
   }
 
-  #thumbnailspacing {
+  .thumbnailspacing {
     margin-top: 20px;
   }
 
