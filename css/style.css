@@ -855,7 +855,7 @@ section img, section video {
     }
 }
 
-@media screen and (prefers-color-scheme: dark) {
+/* @media screen and (prefers-color-scheme: dark) {
   body {
     background-color: grey;
     font-size: 130%;
@@ -864,4 +864,4 @@ section img, section video {
   nav {
     background: burlywood;
 }
-}
+} */
