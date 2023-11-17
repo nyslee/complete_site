@@ -3,7 +3,7 @@ body {
   font-size: 130%;
 }
 
-.link, .myBtn{
+.link, #myBtnBacon, #myBtnCheeto, #myBtnBear, #myBtnBiscuit, #myBtnChief, #myBtnBo, #myBtnBobtail, #myBtnYellowstone, #myBtnDubai, #myBtnSeattle, #myBtnMaldives, #myBtnDoubleChocolateCookies, #myBtnWhiteSaucePasta, #myBtnMatchaCookies, #timeButton{
     background: #3498db;
     background-image: -webkit-linear-gradient(top, #3498db, #2980b9);
     background-image: -moz-linear-gradient(top, #3498db, #2980b9);
@@ -108,7 +108,7 @@ h2 {
 
 h2 + img {
   margin: auto;
-  display: block;
+  /* display: block; */
   padding: 10px;
   background: grey;
 }
@@ -153,8 +153,8 @@ ol.steps {
 
 img, video {
     border: 5px solid black; 
-    /* padding: 10px; */
-    /* margin: 20px; */
+    padding: 10px;
+    margin: 20px;
     border-radius: 30px;
 }
 
@@ -615,7 +615,7 @@ section img, section video {
       grid-template-columns: 1fr 1fr 1fr;
       /* grid-template-columns: 30% 30% 30%; */
   }
-
+ 
   .petgallery img, .petgallery video {
     box-sizing: border-box;
     width: 100%;
@@ -624,18 +624,22 @@ section img, section video {
 
   /* .petgallery img:last-child{
     grid-column: 1/-1;
-  } */
+  }
 
-  /* .petgallery video:last-child{
+  .petgallery video:last-child{
     grid-column: 1/-1;
   }  */
 
-  .petgallery figure:last-child{
-    grid-column: 1/-1;
-  } 
+  .petgallery a:last-child img{
+    grid-column: 2/3;
+    width: 100%;
+    margin-left: 100%;
+  }
 
-  .spacing {
-    margin-bottom: -500px;
+  .petgallery a:last-child video{
+    grid-column: 2/3;
+    width: 100%;
+    margin-left: 100%;
   }
 
   .vertinfo {
@@ -663,23 +667,23 @@ section img, section video {
   }
 
   .travelinfo img {
-    grid-column-start: 1;
-    grid-column-end: 2;
+    /* grid-column-start: 1;
+    grid-column-end: 2; */
     margin: 0;
     align-self: center;
   }
 
   .travel section figure:nth-last-child(2){
-    grid-column-start: 1;
-    grid-column-end: 2;
+    /* grid-column-start: 1;
+    grid-column-end: 2; */
     width: 60%;
     margin-left: 20%;
   
   }
 
   .travel section figure:last-child{
-    grid-column-start: 3;
-    grid-column-end: 4;
+    /* grid-column-start: 3;
+    grid-column-end: 4; */
     width: 60%;
     margin-left: 20%;
   
@@ -687,9 +691,21 @@ section img, section video {
 
   section {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  }
+
+  .firstRow {
+    grid-column-start: span 2;
   }
   
+  .secondRow, .travel section figure:nth-last-child(2){
+    grid-column: 2 / span 2;
+  }
+
+  .travel section figure:last-child{
+    grid-column: 4 / span 2;
+  }
+
   figcaption {
     text-align: center; 
     padding-left: 25px; 
@@ -797,7 +813,6 @@ section img, section video {
   .more {
     display: none;
   }
-
 }
 
 @media screen and (prefers-reduced-motion: reduce){

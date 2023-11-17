@@ -28,6 +28,8 @@
 
     <main id = "main" class="pets">
         <header><h1>Class Pets</h1></header>
+        <button id = "timeButton" type = "button" onclick = "document.getElementById('myBtnTime').innerHTML = Date()">Click to Display Date and Time</button>
+        <p id = "myBtnTime"></p>
         <!-- <title>Class Pets</title> -->
         <link rel="icon" type="image/x-icon" href="/images/bacon.jpg"> 
         <div>
@@ -36,8 +38,8 @@
                 <img id="mainpet" width = "400" src = "images/bacon.jpg" alt = "Brown labradoodle wearing colorful lei">
                 <p>Bacon Q. Dog is a 9yr old labradoodle. He prefers to spend his days lounging among the three different beds/couches that his family has gifted him.  He enjoys a walk or two around the neighborhood, as long as he can pretend that he doesn't see any of the other animals to avoid the embarrassment of not wanting to admit he has no wolf-like skills in chasing them. <br><br> At night just as the rest of the family is ready to relax, Bacon suddenly wants to release all of his energy.  He will place his toys on a mini couch and frantically drag the couch around, giving his toys "a ride."  There is also a lot of rolling.  Lots and lots of rolling.</br></br></p>
             </div>
-            <span class = "dots"></span>
-            <span class = "more">
+            <span id = "dots"></span>
+            <span id = "more">
             <h3>Photo Gallery</h3>
             <div class="petgallery">
                 <a href = "images/bacon_halloween.JPG" target="_blank" data-lightbox="bacongallery" data-title="Bacon in Pirate Costume" data-alt="dog in pirate costume">
@@ -57,7 +59,7 @@
                 </a>
             </div>
             </span>
-            <button onclick="myExtraFunction(this)" class="myBtn">Close Photo Gallery</button>
+            <button onclick="myExtraFunction()" id="myBtnBacon">Close Photo Gallery</button>
             <div>
                 <h3>Likes</h3>
                 <ul class="likes">
@@ -74,8 +76,8 @@
                 <img width = "400" src = "images/cheeto_cattree.jpg" alt = "orange cat hanging paws off a cat tower">
                 <p class = "vertinfo">Cheeto is a cat who likes to eat a lot and play a lot. He has an obsession with his grandpa (human) and tries to get outside every single day. If he isn’t causing problems, he is usually hiding in a seven foot tall cat tree and sleeping. <br><br> Another name for Cheeto is Chicken, because sometimes he sits very scrunched up and ends up looking like a rotisserie chicken. He was nicknamed this by one of his friends, and now he understands it as his own name. He is about six years old and still acts like a younger cat, despite being middle-aged.</p>
             </div>
-            <span class = "dots"></span>
-            <span class = "more">
+            <span id = "dots2"></span>
+            <span id = "more2">
             <h3>Photo Gallery</h3>
             <div class = "petgallery">
                 <a href="images/cheeto_carpet.jpg" target="_blank" data-lightbox="cheetogallery" data-title="Cheeto on Carpet" data-alt="cat lying on carpet">
@@ -92,7 +94,7 @@
                 </a>
             </div>
             </span>
-            <button onclick="myExtraFunction(this)" class="myBtn">Close Photo Gallery</button>
+            <button onclick="myExtraFunction2()" id="myBtnCheeto">Close Photo Gallery</button>
             <div>
                 <h4>Likes</h4>
                 <ul class="likes">
@@ -109,6 +111,8 @@
                 <img width = "400" src = "images/bear.JPG" alt = "A fluffy black, white, and tan Shiba Inu with pointed ears named Bear.">
                 <p class = "vertinfo">Bear is a lazy, food-loving dog that is sometimes playful. His favorite activity is lying in the sun on his side and lounging. He enjoys playing with his toys and loves to fetch them when you throw them, but eventually, he gets bored and just stops fetching them and lays down. <br><br> Bear is also scared of a lot of things. He doesn’t like water (showers and even rain) or getting his nails clipped, and he’s sometimes even so lazy that he’ll just stop walking and sit down until you turn around and go back home.</p>
             </div>
+            <span id = "dots3"></span>
+            <span id = "more3">
             <h3>Photo Gallery</h3>
             <div class = "petgallery">
                 <a href="images/bear_squish.JPG" target="_blank" data-lightbox="beargallery" data-title="Bear with Squished Face" data-alt="dog with squished face">
@@ -124,13 +128,17 @@
                     <img width = "200" src = "images/bear_sunbathing.jpeg" alt = "bear sitting under a window in the sun">
                 </a>
             </div>
-        <h4>Likes</h4>
-        <ul class="likes">
-            <li>Food</li>
-            <li>Laying in bed</li>
-            <li>Fetch</li>
-        </ul>
-        <!-- Grace Zhu and John McCloskey -->
+            </span>
+            <button onclick="myExtraFunction3()" id="myBtnBear">Close Photo Gallery</button>
+                <div>
+                    <h4>Likes</h4>
+                    <ul class="likes">
+                        <li>Food</li>
+                        <li>Laying in bed</li>
+                        <li>Fetch</li>
+                    </ul>
+                </div>
+            <!-- Grace Zhu and John McCloskey -->
         </div>
         <div>
             <div class = "petinfo">
@@ -138,6 +146,8 @@
                 <img width = "400" src = "images/biscuit1.jpeg" alt = "Shiba inu sitting in front of pond with stones in the background">
                 <p>Biscuit is a 2 year old shiba inu dog. Shiba inus are energetic and playful dogs. Biscuit enjoys running outside in circles and then laying down in the grass in the sun for hours. He also likes going for occasional swims. <br><br> As energetic as Biscuit is, he also likes to relax. He loves to sleep in his dog bed and watch Netflix with his owners. His favorite treat is apples.</p>
             </div>
+            <span id = "dots4"></span>
+            <span id = "more4">
             <h3>Photo Gallery</h3>
             <div class = "petgallery">
                 <a href="images/biscuit2.jpeg" target="_blank" data-lightbox="biscuitgallery" data-title="Biscuit Standing in Sunlight" data-alt="dog standing in sunlight">
@@ -152,14 +162,18 @@
                 <a href="images/biscuit5.jpeg" target="_blank" data-lightbox="biscuitgallery" data-title="Biscuit Sleeping" data-alt="dog sleeping">
                     <img width = "200" src = "images/biscuit5.jpeg" alt = "biscuit sleeping">
                 </a>
-        </div>
-        <h4>Likes</h4>
-        <ul class="likes">
-            <li>Going for walks</li>
-            <li>Swimming</li>
-            <li>Apples</li>
-        </ul>
-        <!-- Allison Lee -->
+            </div>
+            </span>
+            <button onclick="myExtraFunction4()" id="myBtnBiscuit">Close Photo Gallery</button>
+                <div>
+                    <h4>Likes</h4>
+                    <ul class="likes">
+                        <li>Going for walks</li>
+                        <li>Swimming</li>
+                        <li>Apples</li>
+                    </ul>
+                </div>
+            <!-- Allison Lee -->
         </div>
         <div>
             <div class = "petinfo">
@@ -167,6 +181,8 @@
                 <img width = "400" src = "images/chief.jpg" alt = "pomeranian looking at camera with head bowed">
                 <p class = "vertinfo">Chief is a 9 year old pomeranian who loves to sleep as much as he can. He naps anywhere, ranging from someone's bed to the grass outside. He enjoys walking outside, but keep watch of him, otherwise he will try to consume geese poop. <br><br> He does not like any toys anymore as when he was younger, he watched a bigger toy shred his favorite one to pieces. He used to know how to roll over, but now replaced that memory with a spin as it is much easier.</p>
             </div>
+            <span id = "dots5"></span>
+            <span id = "more5">
             <h3>Photo Gallery</h3>
             <div class = "petgallery">
                 <a href="images/chief_sleeping.jpg" target="_blank" data-lightbox="chiefgallery" data-title="Chief Rolling in Grass" data-alt="dog rolling in grass">
@@ -181,14 +197,18 @@
                 <a href="images/chief_licking.jpg" target="_blank" data-lightbox="chiefgallery" data-title="Chief Licking Lid" data-alt="dog licking lid">
                     <img width = "200" src = "images/chief_licking.jpg" alt = "caramel pomeranian licking a lid">
                 </a>
-        </div>
-        <h4>Likes</h4>
-        <ul class="likes">
-            <li>Sleeping</li>
-            <li>Deli Chicken</li>
-            <li>Pets behind the ear</li>
-        </ul>
-        <!-- NaveenJohn Premkumar -->
+            </div>
+            </span>
+            <button onclick="myExtraFunction5()" id="myBtnChief">Close Photo Gallery</button>
+                <div>
+                    <h4>Likes</h4>
+                    <ul class="likes">
+                        <li>Sleeping</li>
+                        <li>Deli Chicken</li>
+                        <li>Pets behind the ear</li>
+                    </ul>
+                </div>
+            <!-- NaveenJohn Premkumar -->
         </div>
         <div>
             <div class = "petinfo">
@@ -196,6 +216,8 @@
                 <img width = "400" src = "images/bo.jpg" alt = "black and white dog sitting on grass">
                 <p class = "vertinfo">Bo is a Portuguese Water Dog with black and white fur. His paws are white too, so they always get dirty when outside. He is 12 years old, but he still likes to run around outside a lot. <br><br> He has an abundance of toys but only likes to play with a couple. He enjoys going on walks and especially on trails in the woods. He has a few dog friends that he likes to go on playdates with as well.</p>
             </div>
+            <span id = "dots6"></span>
+            <span id = "more6">
             <h3>Photo Gallery</h3>
             <div class = "petgallery">
                 <a href="images/bo_walking.jpg" target="_blank" data-lightbox="bogallery" data-title="Bo Walking in Grass" data-alt="dog walking in grass">
@@ -210,14 +232,18 @@
                 <a href="images/bo_chair.jpg" target="_blank" data-lightbox="bogallery" data-title="Bo Sitting on Top of Chair" data-alt="dog sitting on top of chair">
                     <img width = "200" src = "images/bo_chair.jpg" alt = "black and white dog sitting on top of chair">
                 </a>
-        </div>
-        <h4>Likes</h4>
-        <ul class="likes">
-            <li>Walks</li>
-            <li>The Sun</li>
-            <li>Treats</li>
-        </ul>
-        <!-- Joseph Schaubroeck -->
+            </div>
+            </span>
+            <button onclick="myExtraFunction6()" id="myBtnBo">Close Photo Gallery</button>
+                <div>
+                    <h4>Likes</h4>
+                    <ul class="likes">
+                        <li>Walks</li>
+                        <li>The Sun</li>
+                        <li>Treats</li>
+                    </ul>
+                </div>
+            <!-- Joseph Schaubroeck -->
         </div>
         <div>
             <div class = "petinfo">
@@ -225,6 +251,8 @@
                 <img width = "400" src = "images/BobTailCat1.jpeg" alt = "Yellow/Brown cat with small black stripes with a cute stubby tail">
                 <p>One of my earliest memories was spending time with a newly born Subin, So in a way, we grew up together. Therefore, from going to the store at the end of the road to eating together, we did everything together. <br><br> Subin was somehow not bothered by vaccum cleaners. Even though the loudness of it was able to scare any animals away, Subin enjoyed the chaos of it, opting to even sit on the handle as we vaccum.</p>
             </div>
+            <span id = "dots7"></span>
+            <span id = "more7">
             <h3>Photo Gallery</h3>
             <div class = "petgallery">
                 <a href="images/BobTailCat2.jpeg" target="_blank" data-lightbox="subingallery" data-title="Small Subin Posing" data-alt="small cat posing">
@@ -240,12 +268,16 @@
                     <img width = "200" src = "images/BobTailCat5.jpeg" alt = "Very old and mature subin with a brownish yellow background looking at the camera">
                 </a>
             </div>
-        <h4>Likes</h4>
-        <ul class="likes">
-            <li>Hitting people’s faces</li>
-            <li>Sleeping under the sun</li>
-            <li>Laying on a keybaord</li>
-        </ul>
+            </span>
+            <button onclick="myExtraFunction7()" id="myBtnBobtail">Close Photo Gallery</button>
+                <div>
+                    <h4>Likes</h4>
+                    <ul class="likes">
+                        <li>Hitting people’s faces</li>
+                        <li>Sleeping under the sun</li>
+                        <li>Laying on a keybaord</li>
+                    </ul>
+                </div>
         <!-- Ramsey (Nyang Lin Phyo) -->
     </div>
     </main>
